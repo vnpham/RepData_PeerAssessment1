@@ -92,9 +92,10 @@ plot(filteredIntervalMean$interval, filteredIntervalMean$steps,type="l",
 
 ![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
 
-NOTE: the maximum value in the x-axis is 1440 which is the number of minutes in
+**NOTE: the maximum value in the x-axis is 1440 which is the number of minutes in
 a day (24*60).  This is different from the original encoding which the maximum
-value is 2355 whic correspond to 23:55 PM.
+value is 2355 which correspond to 23:55 PM.  If the original encoding is used,
+there would be no data between interval 60 to 100, 160 to 200 ...**
 
 - 5-minute interval, on average across all the days in the dataset,
 contains the maximum number of steps
@@ -212,9 +213,10 @@ qplot(interval, steps, data=combinedIntervalMean, facets = weekday ~ ., geom="li
 
 ![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15.png) 
 
-NOTE: the maximum value in the x-axis is 1440 which is the number of minutes in
+**NOTE: the maximum value in the x-axis is 1440 which is the number of minutes in
 a day (24*60).  This is different from the original encoding which the maximum
-value is 2355 whic correspond to 23:55 PM.
+value is 2355 which correspond to 23:55 PM.  If the original encoding is used,
+there would be no data between interval 60 to 100, 160 to 200 ...**
 
 Comments: There are differences in activity patterns between weekdays and weekends.
 During weekdays, activity peaks in early morning and slows down significantly during
